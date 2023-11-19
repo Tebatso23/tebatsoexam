@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    body{
+    background-color: #e3e3e3;
+    min-height: 1100px;
+    width: 100%;
+}
+    .form{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,500px);
+        gap: 20px;
+        place-content: center;
+        margin-top: 20px;
+        max-width: 100%;
+       
+
+    }
+    
+    .textarea{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+        box-shadow: 10px 10px 10px #455d7a;
+         place-items: center;
+    }
+    input{
+        width: 100%;
+        height: 3rem;
+        border: 1px solid #455d7a;
+        box-shadow: 10px 10px 10px #455d7a;
+    }
+    h1{
+        text-align: center;
+        color: #455d7a;
+        font-weight: 400;
+        font-size: 36px;
+    }
+     .button{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        margin-top: 40px;
+     }
+      button{
+     padding: 10px;
+     width: 150px;
+     border-radius: 10px;
+     box-shadow: 10px 10px #455d7a;
+     
+     font-weight: 700;
+     border: 1px solid #ffaa7c;
+}
+ button:hover{
+   box-shadow:none;
+    color: #f95959;
+    transition: 1s ease-in-out;
+}
+img{
+    max-width: 40%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    justify-content:center ;
+    align-items: center;
+}
+
+.maps{
+    height: 100vh;
+    padding: 20px;
+    max-width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 30px;
+     flex-direction: column;
+       
+
+}
+iframe{
+    max-width: 100%;
+}
+
+     @media only screen and (max-width: 768px){
+        .form{
+            display: block;
+            margin-top: 20px;
+            width: 60%;
+            margin-left: 160px;
+            
+        }
+         input{
+           
+        
+         margin-top: 20px;
+         
+    
+       }
+       .textarea{
+        display: block;
+        margin-top: 10px;
+        
+    }
+    body{
+        height: 1100px;
+    }
+ }
+  @media only screen and (max-width: 425px){
+    .form{
+            display: block;
+            margin-top: 20px;
+          max-width: 60%;
+            margin-left: 100px;
+            
+        }
+
+  }
+   @media only screen and (max-width: 425px){
+    .form{
+            display: block;
+            margin-top: 20px;
+           max-width: 60%;
+            margin-left: 80px;
+            
+        }
+
+  }
+     
+</style>
+<body>
+    <h1>Contact Me </h1>
+    
+     <div class="form">
+    
+            <div class="first-name">
+                 <input type="text" placeholder="First Name">
+            </div>
+            <div class="last-name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <div class="email">
+                <input type="email"placeholder="Email Address">
+            </div>
+             <div class="contact">
+                <input type="tel" placeholder="Mobile No">
+             </div>
+             <div class="textarea">
+                   <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" class="textarea"></textarea> 
+             </div> 
+           
+    </div>
+    <div>
+            <div class="button">
+                 <button>Send Message</button>
+
+            </div>
+    </div>
+     
+
+      <div class="maps">
+                <div>
+                    
+                    <div class="image">
+                        <img src="R.png" alt="">
+                    </div>
+                    <div id="map">
+                       
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.224284838267!2d27.926340074616814!3d-26.026216577186695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e957621bf499253%3A0x8ee05ab458d7a506!2s1%20Bamako%20St%2C%20Cosmo%20City%2C%20Roodepoort%2C%202188!5e0!3m2!1sen!2sza!4v1700396868113!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen=""
+                         loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+    
+        
+
+       
+   
+   
+</body>
+</html>  
